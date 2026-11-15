@@ -1,0 +1,213 @@
+Block timestamp:
+Use of "block.timestamp": "block.timestamp" can be influenced by miners to a certain degree. That means that a miner can "choose" the block.timestamp, to a certain degree, to change the outcome of a transaction in the mined block.
+more
+Pos: 72:20:
+Block timestamp:
+Use of "block.timestamp": "block.timestamp" can be influenced by miners to a certain degree. That means that a miner can "choose" the block.timestamp, to a certain degree, to change the outcome of a transaction in the mined block.
+more
+Pos: 107:27:
+Block timestamp:
+Use of "block.timestamp": "block.timestamp" can be influenced by miners to a certain degree. That means that a miner can "choose" the block.timestamp, to a certain degree, to change the outcome of a transaction in the mined block.
+more
+Pos: 128:27:
+Block timestamp:
+Use of "block.timestamp": "block.timestamp" can be influenced by miners to a certain degree. That means that a miner can "choose" the block.timestamp, to a certain degree, to change the outcome of a transaction in the mined block.
+more
+Pos: 168:12:
+Block timestamp:
+Use of "block.timestamp": "block.timestamp" can be influenced by miners to a certain degree. That means that a miner can "choose" the block.timestamp, to a certain degree, to change the outcome of a transaction in the mined block.
+more
+Pos: 169:16:
+Block timestamp:
+Use of "block.timestamp": "block.timestamp" can be influenced by miners to a certain degree. That means that a miner can "choose" the block.timestamp, to a certain degree, to change the outcome of a transaction in the mined block.
+more
+Pos: 181:12:
+Low level calls:
+Use of "call": should be avoided whenever possible. It can lead to unexpected behavior if return value is not handled properly. Please use Direct Calls via specifying the called contract's interface.
+more
+Pos: 255:22:
+Gas costs:
+Gas requirement of function PredictionMarket.BASE is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 8:4:
+Gas costs:
+Gas requirement of function PredictionMarket.owner is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 12:4:
+Gas costs:
+Gas requirement of function PredictionMarket.oracle is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 13:4:
+Gas costs:
+Gas requirement of function PredictionMarket.closeTime is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 15:4:
+Gas costs:
+Gas requirement of function PredictionMarket.resolutionDeadline is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 16:4:
+Gas costs:
+Gas requirement of function PredictionMarket.question is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 18:4:
+Gas costs:
+Gas requirement of function PredictionMarket.buyQuote is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 80:4:
+Gas costs:
+Gas requirement of function PredictionMarket.sellQuote is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 90:4:
+Gas costs:
+Gas requirement of function PredictionMarket.buy is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 102:4:
+Gas costs:
+Gas requirement of function PredictionMarket.sell is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 122:4:
+Gas costs:
+Gas requirement of function PredictionMarket.report is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 162:4:
+Gas costs:
+Gas requirement of function PredictionMarket.cancelExpired is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 178:4:
+Gas costs:
+Gas requirement of function PredictionMarket.claim is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 190:4:
+Gas costs:
+Gas requirement of function PredictionMarket.requiredReserve is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 217:4:
+Gas costs:
+Gas requirement of function PredictionMarket.withdrawSurplus is infinite: If the gas requirement of a function is higher than the block gas limit, it cannot be executed. Please avoid loops in your functions or actions that modify large areas of storage (this includes clearing or copying arrays in storage)
+Pos: 241:4:
+Constant/View/Pure functions:
+PredictionMarket.buyQuote(uint8,uint256) : Is constant but potentially should not be. Note: Modifiers are currently not considered by this static analysis.
+more
+Pos: 80:4:
+Constant/View/Pure functions:
+PredictionMarket.sellQuote(uint8,uint256) : Is constant but potentially should not be. Note: Modifiers are currently not considered by this static analysis.
+more
+Pos: 90:4:
+Similar variable names:
+PredictionMarket.(string,address,uint256,uint256) : Variables have very similar names "oracle" and "oracle_". Note: Modifiers are currently not considered by this static analysis.
+Pos: 58:16:
+Similar variable names:
+PredictionMarket.(string,address,uint256,uint256) : Variables have very similar names "oracle" and "oracle_". Note: Modifiers are currently not considered by this static analysis.
+Pos: 69:8:
+Similar variable names:
+PredictionMarket.(string,address,uint256,uint256) : Variables have very similar names "oracle" and "oracle_". Note: Modifiers are currently not considered by this static analysis.
+Pos: 69:17:
+Similar variable names:
+PredictionMarket.(string,address,uint256,uint256) : Variables have very similar names "question" and "question_". Note: Modifiers are currently not considered by this static analysis.
+Pos: 57:22:
+Similar variable names:
+PredictionMarket.(string,address,uint256,uint256) : Variables have very similar names "question" and "question_". Note: Modifiers are currently not considered by this static analysis.
+Pos: 70:8:
+Similar variable names:
+PredictionMarket.(string,address,uint256,uint256) : Variables have very similar names "question" and "question_". Note: Modifiers are currently not considered by this static analysis.
+Pos: 70:19:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 45:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 57:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 58:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 59:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 63:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 84:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 85:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 94:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 106:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 112:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 127:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 134:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 138:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 142:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 152:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 163:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 164:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 165:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 167:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 179:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 180:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 191:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 210:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 242:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 243:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 247:8:
+Guard conditions:
+Use "assert(x)" if you never ever want x to be false, not in any circumstance (apart from a bug in your code). Use "require(x)" if x can be false, due to e.g. invalid input or a failing external component.
+more
+Pos: 256:8:
+Data truncated:
+Division of integer values yields an integer value again. That means e.g. 10 / 100 = 0 instead of 0.1 since the result is an integer again. This does not hold for division of (only) literal values since those yield rational constants.
+Pos: 8:35:
+Data truncated:
+Division of integer values yields an integer value again. That means e.g. 10 / 100 = 0 instead of 0.1 since the result is an integer again. This does not hold for division of (only) literal values since those yield rational constants.
+Pos: 77:30:
