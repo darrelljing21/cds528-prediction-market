@@ -1,0 +1,35 @@
+flowchart TB
+    T["Trader<br/>Buy / sell shares; claim payout or refund"]
+    O["Market owner<br/>Seed collateral; withdraw surplus"]
+    R["Trusted oracle<br/>Observe event; report YES or NO"]
+    E["Off-chain event<br/>Outcome is not verified automatically"]
+
+    subgraph OFF["Off-chain interaction layer"]
+        UI["Remix IDE + MetaMask<br/>Browser interaction and wallet signing"]
+        CLI["Hardhat scripts + ethers<br/>Local signing account; RPC access"]
+    end
+
+    subgraph ON["Ethereum Sepolia — chain ID 11155111"]
+        M["PredictionMarket.sol<br/>0x5E01b3fb7acc05E2025C4B244Ca0b0a571E6d8bb"]
+        S["On-chain state<br/>Question; owner; oracle; deadlines; result<br/>Internal YES/NO shares and supply<br/>Net deposits and refund liability"]
+        F["ETH custody and reserve accounting<br/>Winning payout: 0.001 ETH per share<br/>Cancellation: refund net deposits<br/>Owner withdrawal retains required reserves"]
+        L["Events<br/>Trade / Resolved / Claimed / SurplusWithdrawn"]
+        M --- S
+        M --- F
+        M --> L
+    end
+
+    T --> UI
+    T --> CLI
+    O --> UI
+    O --> CLI
+    E -. "Manual observation; trust assumption" .-> R
+    R --> UI
+    R --> CLI
+    UI -->|"Signed transactions and read calls"| M
+    CLI -->|"Signed transactions and read calls"| M
+    F -->|"Payouts / refunds"| T
+    F -->|"Surplus"| O
+
+    N["Deployment note<br/>Owner and oracle use the same account in this Sepolia demo.<br/>No frontend application, backend server or ERC20 outcome token."]
+    N -.-> M

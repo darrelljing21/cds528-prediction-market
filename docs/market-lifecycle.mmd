@@ -1,0 +1,20 @@
+flowchart TD
+    A["Owner deploys market<br/>Seed funding >= 0.4 ETH<br/>Set oracle and durations"] --> B["Trading open<br/>result = 0; timestamp < closeTime"]
+    B --> C["Trader queries quote"]
+    C --> D{"Buy or sell?"}
+    D -->|Buy| E["buy(side, amount)<br/>Attach exact quoted ETH<br/>Validate side, amount and cap"]
+    D -->|Sell| F["sell(side, amount, minReturn)<br/>Attach zero ETH<br/>Check holdings, quote, net deposit and reserves"]
+    E --> G["Update shares, supply and deposits<br/>Emit Trade"]
+    F --> H["Update accounting; transfer ETH<br/>Emit Trade; revert all if transfer fails"]
+    G --> B
+    H --> B
+    B -->|"timestamp >= closeTime"| I["Trading closed<br/>No buy or sell"]
+    I --> J{"Oracle reports before<br/>resolutionDeadline?"}
+    J -->|Yes| K["Oracle calls report(0 or 1)<br/>result = 1 for YES; 2 for NO<br/>Emit Resolved"]
+    J -->|"No; deadline reached"| L["Any account calls cancelExpired()<br/>result = 3<br/>Emit Resolved"]
+    K --> M["Winning holder calls claim()<br/>Clear winning shares and reduce supply<br/>Pay shares x 0.001 ETH<br/>Emit Claimed"]
+    L --> N["User calls claim()<br/>Clear net deposit; reduce refund liability<br/>Pay recorded net deposit<br/>Emit Claimed"]
+    K --> O["Owner may call withdrawSurplus()<br/>Retain all outstanding winning liabilities"]
+    L --> P["Owner may call withdrawSurplus()<br/>Retain all outstanding refund liabilities"]
+    M --> Q["Repeated claim without entitlement reverts<br/>Resolved result cannot be changed"]
+    N --> Q
