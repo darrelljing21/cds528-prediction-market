@@ -51,3 +51,20 @@ Routescan verification polling timed out; its final status was not confirmed.
 Successful deployment and source verification do not establish that all
 functional tests have been repeated on Sepolia.
 Earlier manual functional tests used Remix VM.
+
+## Post-deployment initialization checks
+
+Read-only queries were performed against the Sepolia deployment.
+
+| Query | Observed result | Status |
+|---|---|---|
+| question() | Will the green car win? | Pass |
+| owner() | 0xBff80D177b850BA6663a25C3c612012fD09c6e1c | Pass |
+| oracle() | 0xBff80D177b850BA6663a25C3c612012fD09c6e1c | Pass |
+| result() | 0 | Pass |
+| supply(0) | 0 | Pass |
+| supply(1) | 0 | Pass |
+
+These checks confirm the observed initial configuration.
+Trading, settlement and callback tests documented elsewhere were
+performed in Remix VM and have not all been repeated on Sepolia.
