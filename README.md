@@ -210,3 +210,45 @@ Team members remain responsible for reviewing and validating the work.
 ## License
 
 MIT. See the repository LICENSE file.
+
+## Hardhat interaction scripts
+
+Install dependencies and compile:
+
+```bash
+npm ci
+npx hardhat compile
+```
+
+Configure `SEPOLIA_RPC_URL` and `SEPOLIA_PRIVATE_KEY` in the local
+process environment. Never commit private keys.
+`.env.example` documents the variables; `.env` is not loaded automatically.
+
+Read the deployed market:
+
+```bash
+npx hardhat run scripts/interact.ts --network sepolia
+```
+
+Available transaction scripts:
+
+- `buy.ts`
+- `sell.ts`
+- `report.ts`
+- `claim.ts`
+- `cancelExpired.ts`
+- `withdrawSurplus.ts`
+
+Run them using:
+`npx hardhat run scripts/<filename> --network sepolia`.
+
+Scripts target the recorded Sepolia contract and contain fixed parameters.
+Transactions require the appropriate market state, account permissions
+and test ETH. Buying and selling fail after the trading deadline.
+
+The prepared project compiled successfully locally.
+Sepolia execution logs were supplied for interact, buy and sell.
+Other scripts have not been confirmed as executed on Sepolia.
+
+These are interaction scripts, not automated tests or deployment scripts.
+The `npm test` command remains a placeholder.
