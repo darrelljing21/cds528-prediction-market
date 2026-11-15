@@ -45,9 +45,15 @@ No npm installation is needed for the Remix workflow.
 4. Compile `PredictionMarket.sol`.
 5. For callback testing, also compile `MarketTestReceiver.sol`.
 
-Record optimizer settings, optimizer runs and EVM target used for each
-deployment. Use identical settings for later source verification.
-A single canonical compiler configuration has not yet been documented.
+The Sepolia deployment used:
+
+- Compiler: 0.8.24+commit.e11b9ed9
+- Optimizer: enabled, 200 runs
+- EVM target: paris
+
+Use these exact settings when reproducing the Sepolia deployment
+or verifying its source. Earlier Remix VM test settings were not
+fully recorded.
 
 ## Deploy in Remix VM
 
@@ -171,13 +177,21 @@ This is not an independent security audit or proof of safety.
 
 ## Deployment status
 
-Testing recorded so far used **Remix VM**.
-VM addresses and transaction hashes are local test evidence,
-not public-testnet deployment links.
+The contract has been deployed to Ethereum Sepolia (chain ID 11155111).
 
-Sepolia deployment and source verification are pending.
-Add the network, contract address, deployment transaction,
-constructor arguments, compiler settings and verification link when completed.
+- Contract: `0x5E01b3fb7acc05E2025C4B244Ca0b0a571E6d8bb`
+- [Verified source on Blockscout](https://eth-sepolia.blockscout.com/address/0x5E01b3fb7acc05E2025C4B244Ca0b0a571E6d8bb?tab=contract)
+- [Verified source on Sourcify](https://repo.sourcify.dev/11155111/0x5E01b3fb7acc05E2025C4B244Ca0b0a571E6d8bb/)
+- [Deployment details](docs/sepolia-deployment.md)
+- [Manual test results](docs/manual-test-results.md)
+
+Sourcify and Blockscout verification succeeded.
+Etherscan verification was skipped because no API key was configured.
+Routescan polling timed out; its final status was not confirmed.
+
+Earlier functional and callback tests used Remix VM.
+Deployment and verification do not mean all tests were repeated on Sepolia.
+Local VM addresses and hashes are not public-testnet evidence.
 
 ## References
 
