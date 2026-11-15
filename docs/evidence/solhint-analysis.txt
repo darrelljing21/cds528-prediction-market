@@ -1,0 +1,64 @@
+Immutable variables name are set to be in capitalized SNAKE_CASE
+Pos: 5:11
+Immutable variables name are set to be in capitalized SNAKE_CASE
+Pos: 5:12
+Immutable variables name are set to be in capitalized SNAKE_CASE
+Pos: 5:14
+Immutable variables name are set to be in capitalized SNAKE_CASE
+Pos: 5:15
+Use Custom Errors instead of require statements
+Pos: 9:44
+Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)
+Pos: 5:50
+Use Custom Errors instead of require statements
+Pos: 9:56
+Use Custom Errors instead of require statements
+Pos: 9:57
+Use Custom Errors instead of require statements
+Pos: 9:58
+Use Custom Errors instead of require statements
+Pos: 9:62
+Use Custom Errors instead of require statements
+Pos: 9:83
+Use Custom Errors instead of require statements
+Pos: 9:84
+Use Custom Errors instead of require statements
+Pos: 9:93
+Use Custom Errors instead of require statements
+Pos: 9:105
+Use Custom Errors instead of require statements
+Pos: 9:111
+Use Custom Errors instead of require statements
+Pos: 9:126
+Use Custom Errors instead of require statements
+Pos: 9:133
+Use Custom Errors instead of require statements
+Pos: 9:137
+Use Custom Errors instead of require statements
+Pos: 9:141
+Use Custom Errors instead of require statements
+Pos: 9:151
+Use Custom Errors instead of require statements
+Pos: 9:162
+Use Custom Errors instead of require statements
+Pos: 9:163
+Use Custom Errors instead of require statements
+Pos: 9:164
+Use Custom Errors instead of require statements
+Pos: 9:166
+Use Custom Errors instead of require statements
+Pos: 9:178
+Use Custom Errors instead of require statements
+Pos: 9:179
+Use Custom Errors instead of require statements
+Pos: 9:190
+Use Custom Errors instead of require statements
+Pos: 9:209
+Use Custom Errors instead of require statements
+Pos: 9:241
+Use Custom Errors instead of require statements
+Pos: 9:242
+Use Custom Errors instead of require statements
+Pos: 9:246
+Use Custom Errors instead of require statements
+Pos: 9:255
