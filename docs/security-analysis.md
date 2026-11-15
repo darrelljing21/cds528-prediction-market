@@ -76,10 +76,19 @@ and other attack sequences were not tested.
   profitable exits.
 - Losing shares and cancelled-market shares can remain visible in storage.
 - Manual tests and static analysis do not prove absence of vulnerabilities.
-- Testing described here used Remix VM; public-testnet deployment and
-  source verification remain separate tasks.
+- Functional and callback tests described here used Remix VM.
+  Sepolia deployment, source verification and initialization checks
+  were subsequently completed. See
+  [Sepolia deployment](sepolia-deployment.md).
+  Full functional tests were not repeated on Sepolia.
 
 ## Evidence
 
-Preserve original scan output, representative screenshots and transaction
-logs in docs/evidence/. Do not describe this review as a clean audit.
+- [Remix analysis output](evidence/remix-analysis.txt)
+- [Solhint analysis output](evidence/solhint-analysis.txt)
+- [Remix screenshot](evidence/remix-analysis.png)
+- [Solhint screenshot](evidence/solhint-analysis.png)
+- [Deployment and verification screenshot](evidence/sepolia-deployment-verification.png)
+- [Manual test results](manual-test-results.md)
+
+This review is not an independent security audit.
