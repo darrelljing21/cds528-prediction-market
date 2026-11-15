@@ -50,3 +50,20 @@ Transaction gas fees are separate from the trading amount.
 npx hardhat run scripts/interact.ts --network sepolia
 npx hardhat run scripts/buy.ts --network sepolia
 npx hardhat run scripts/sell.ts --network sepolia
+```
+
+## Coverage limits
+
+- Execution evidence was supplied for interact.ts, buy.ts and sell.ts.
+- The provided log shows aggregate supply changes, but does not include
+  post-trade queries of individual shares, netDeposit or refundLiability.
+- Sepolia execution was not confirmed for report.ts, claim.ts,
+  cancelExpired.ts or withdrawSurplus.ts.
+- Earlier settlement, refund and callback tests used Remix VM.
+- These transactions are a separate run from the earlier screenshot
+  transactions, which have different hashes.
+- The sanitized Hardhat package subsequently compiled successfully locally.
+- There is no automated test suite or deployment script.
+
+See [Gas summary](gas-summary.md) and
+[manual Remix VM tests](manual-test-results.md).
