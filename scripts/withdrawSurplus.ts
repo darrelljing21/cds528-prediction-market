@@ -1,7 +1,7 @@
 import { ethers } from "hardhat";
 
 async function main(): Promise<void> {
-  const rawAddress = "0xB5451753A83ECE12225F3f0F5c3D28Ddb0237566";
+  const rawAddress = "0xAAC26183DB21E87ADE52B59792B1AC7EA31cE40D";
   const CONTRACT_ADDRESS = ethers.getAddress(rawAddress.toLowerCase());
 
   console.log(`正在连接到 Sepolia 测试网的 PredictionMarket 合约提取盈余 (withdrawSurplus)...`);

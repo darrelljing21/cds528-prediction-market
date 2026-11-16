@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 
 // 💡 请确保这里填入的是你最新部署的合约地址
-const CONTRACT_ADDRESS = "0xB5451753A83ECE12225F3f0F5c3D28Ddb0237566";
+const CONTRACT_ADDRESS = "0xAAC26183DB21E87ADE52B59792B1AC7EA31cE40D";
 
 // 对应 PredictionMarket.sol 智能合约的完整 ABI
 const CONTRACT_ABI = [
