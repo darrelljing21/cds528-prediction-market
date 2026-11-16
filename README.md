@@ -131,3 +131,4 @@ npx hardhat run scripts/claim.ts --network sepolia
 cd frontend
 npm run dev
 ```
+### tips: 记得修改hardhat.config.ts里的私钥
