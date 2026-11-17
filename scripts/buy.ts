@@ -1,7 +1,7 @@
 import { ethers } from "hardhat";
 
 async function main(): Promise<void> {
-  const rawAddress = "0xAAC26183DB21E87ADE52B59792B1AC7EA31cE40D";
+  const rawAddress = "0x48DE3794FB4652B296dBeb96092eFC698eD3d086";
   const CONTRACT_ADDRESS = ethers.getAddress(rawAddress.toLowerCase());
 
   console.log(`正在连接到 Sepolia 测试网的 PredictionMarket 合约...`);
